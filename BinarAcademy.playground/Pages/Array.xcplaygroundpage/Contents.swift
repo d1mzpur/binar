@@ -48,6 +48,3 @@ print(arr1D)
 //random
 
 var random: [Any] = [1,"Binar", true,1.0]
-if let number = random[0] as? Int{
-} else {
-}

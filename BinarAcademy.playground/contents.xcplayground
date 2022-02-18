@@ -8,5 +8,7 @@
         <page name='Set'/>
         <page name='Dictionary'/>
         <page name='Quis'/>
+        <page name='Challenge'/>
+        <page name='ChallengeCapter1'/>
     </pages>
 </playground>

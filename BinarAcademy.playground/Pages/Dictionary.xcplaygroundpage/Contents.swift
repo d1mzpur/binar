@@ -18,4 +18,3 @@ if let animal: String = dict[1] {
     print(animal)
 }
 
-let groups = Dictionary(grouping: dict,)
