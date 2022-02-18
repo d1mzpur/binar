@@ -10,5 +10,8 @@
         <page name='Quis'/>
         <page name='Challenge'/>
         <page name='ChallengeCapter1'/>
+        <page name='Challenge day 2'/>
+        <page name='Palindrome'/>
+        <page name='PecahanMataUang'/>
     </pages>
 </playground>
