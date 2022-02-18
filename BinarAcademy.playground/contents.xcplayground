@@ -3,5 +3,10 @@
     <pages>
         <page name='Operator'/>
         <page name='Typedata'/>
+        <page name='Array'/>
+        <page name='If-Else'/>
+        <page name='Set'/>
+        <page name='Dictionary'/>
+        <page name='Quis'/>
     </pages>
 </playground>
