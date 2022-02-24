@@ -13,5 +13,7 @@
         <page name='Challenge day 2'/>
         <page name='Palindrome'/>
         <page name='PecahanMataUang'/>
+        <page name='Modulo9'/>
+        <page name='Switch Case'/>
     </pages>
 </playground>
