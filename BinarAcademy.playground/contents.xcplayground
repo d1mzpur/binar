@@ -15,5 +15,6 @@
         <page name='PecahanMataUang'/>
         <page name='Modulo9'/>
         <page name='Switch Case'/>
+        <page name='Class'/>
     </pages>
 </playground>
