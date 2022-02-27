@@ -9,12 +9,13 @@
         <page name='Dictionary'/>
         <page name='Quis'/>
         <page name='Challenge'/>
-        <page name='ChallengeCapter1'/>
+        <page name='ChallengeCapther1'/>
         <page name='Challenge day 2'/>
         <page name='Palindrome'/>
         <page name='PecahanMataUang'/>
         <page name='Modulo9'/>
         <page name='Switch Case'/>
         <page name='Class'/>
+        <page name='Challenge 2'/>
     </pages>
 </playground>
