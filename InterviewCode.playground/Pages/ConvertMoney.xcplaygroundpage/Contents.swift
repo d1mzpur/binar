@@ -1,11 +1,3 @@
-//: [Previous](@previous)
-
-import Foundation
-
-var greeting = "Hello, playground"
-
-//: [Next](@next)
-
 // Pecahan rupiah 2000, 5000, 10.000, 20.000, 50.000 dalam array
 // Ada input 36.000 output adalah element dalam array [20.000, 10.000, 5000, 2000, 2000, 2000]
 // kalau 37.500 output adalah [20.000, 10.000, 5000, 2000, 2000]

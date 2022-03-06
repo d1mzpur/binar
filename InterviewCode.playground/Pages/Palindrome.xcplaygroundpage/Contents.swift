@@ -1,11 +1,3 @@
-//: [Previous](@previous)
-
-import Foundation
-
-var greeting = "Hello, playground"
-
-//: [Next](@next)
-
 func palindrome(string: String)-> Bool{
     let char = Array(string)
     for i in 0..<char.count / 2 {
