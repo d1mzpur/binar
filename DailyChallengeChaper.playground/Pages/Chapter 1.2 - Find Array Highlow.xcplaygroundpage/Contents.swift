@@ -1,5 +1,3 @@
-//: [Previous](@previous)
-
 import Foundation
 
 var greeting = "Hello, playground"
@@ -7,10 +5,10 @@ var greeting = "Hello, playground"
 //: [Next](@next)
 
 var arr = [1,4,5,7,4,2,1]
-var result = 10
+var result = arr[0]
 
 for i in arr {
-    if i < result {
+    if i > result {
         result = i
     }
 }

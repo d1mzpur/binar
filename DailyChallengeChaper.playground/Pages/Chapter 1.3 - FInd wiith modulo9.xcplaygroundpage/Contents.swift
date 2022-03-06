@@ -1,11 +1,3 @@
-//: [Previous](@previous)
-
-import Foundation
-
-var greeting = "Hello, playground"
-
-//: [Next](@next)
-
 var array: [Int] = [1,2,3,4,5,6,7,8]
 
 var hasil = array.reduce(0, +)
