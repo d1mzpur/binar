@@ -31,7 +31,7 @@ enum Challenge: String, CaseIterable {
     }
 }
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController, StoryboardInstantiable {
     
     @IBOutlet weak var tableView: UITableView!
     var selectedChallenge: Challenge?
@@ -50,8 +50,8 @@ class DashboardViewController: UIViewController {
 extension DashboardViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let studentCount: Int = displayedChallenge.count
-        return studentCount
+        let courseCount: Int = displayedChallenge.count
+        return courseCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -64,6 +64,24 @@ extension DashboardViewController: UITableViewDataSource, UITableViewDelegate{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let row: Int = indexPath.row // selected row
+        let selectedChallenge = displayedChallenge[row] // get Student from sorted at number of row
+        switch selectedChallenge {
+        
+        case .AnimalListV1Mentor:
+            let storyboard = UIStoryboard(name: "ALFMain", bundle: nil)
+            guard let viewController = storyboard.instantiateViewController(withIdentifier: "ALFViewController") as? ALFViewController else { return }
+            open(viewController)
+            
+        default:
+            break
+        }
+    }
+    
+    private func open(_ viewController: UIViewController) {
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    
 }
-
-

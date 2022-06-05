@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vaj-xa-eIu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="UJM-1O-sdI">
+            <objects>
+                <viewController storyboardIdentifier="ALFViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vaj-xa-eIu" customClass="ALFViewController" customModule="challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pr2-Rf-AR3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9c8-u1-hZQ">
+                                <rect key="frame" x="20" y="239" width="374" height="603"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AnimalsTableCell" id="V0u-GG-2jV">
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V0u-GG-2jV" id="4VS-6k-D5h">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" placeholder="Search Animals" translatesAutoresizingMaskIntoConstraints="NO" id="n6W-4T-wGt">
+                                <rect key="frame" x="20" y="104" width="374" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyP-mB-zIn">
+                                <rect key="frame" x="20" y="184" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="A-Z"/>
+                                <connections>
+                                    <action selector="buttonAZ:" destination="Vaj-xa-eIu" eventType="touchUpInside" id="z1s-CW-YPc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j5Q-OH-aez"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j5Q-OH-aez" firstAttribute="trailing" secondItem="n6W-4T-wGt" secondAttribute="trailing" constant="20" id="4Fb-xd-Wr1"/>
+                            <constraint firstItem="cyP-mB-zIn" firstAttribute="leading" secondItem="j5Q-OH-aez" secondAttribute="leading" constant="20" id="9rc-kf-hFF"/>
+                            <constraint firstItem="cyP-mB-zIn" firstAttribute="top" secondItem="n6W-4T-wGt" secondAttribute="bottom" constant="29" id="Bnz-tv-nZC"/>
+                            <constraint firstItem="n6W-4T-wGt" firstAttribute="leading" secondItem="j5Q-OH-aez" secondAttribute="leading" constant="20" id="ECr-Ow-Uia"/>
+                            <constraint firstItem="cyP-mB-zIn" firstAttribute="top" secondItem="n6W-4T-wGt" secondAttribute="bottom" constant="29" id="YnH-HL-KV2"/>
+                            <constraint firstItem="j5Q-OH-aez" firstAttribute="trailing" secondItem="cyP-mB-zIn" secondAttribute="trailing" constant="20" id="ah7-Xa-8Gt"/>
+                            <constraint firstItem="j5Q-OH-aez" firstAttribute="trailing" secondItem="9c8-u1-hZQ" secondAttribute="trailing" constant="20" id="d5J-cR-zjg"/>
+                            <constraint firstItem="9c8-u1-hZQ" firstAttribute="top" secondItem="cyP-mB-zIn" secondAttribute="bottom" constant="24" id="fld-Gg-lWy"/>
+                            <constraint firstItem="9c8-u1-hZQ" firstAttribute="top" secondItem="cyP-mB-zIn" secondAttribute="bottom" constant="24" id="hnS-xk-F6S"/>
+                            <constraint firstItem="j5Q-OH-aez" firstAttribute="bottom" secondItem="9c8-u1-hZQ" secondAttribute="bottom" constant="20" id="sQJ-ji-mqE"/>
+                            <constraint firstItem="n6W-4T-wGt" firstAttribute="top" secondItem="j5Q-OH-aez" secondAttribute="top" constant="60" id="tyh-6b-y89"/>
+                            <constraint firstItem="9c8-u1-hZQ" firstAttribute="leading" secondItem="j5Q-OH-aez" secondAttribute="leading" constant="20" id="vv7-E6-zhW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonAZ" destination="cyP-mB-zIn" id="rvg-Wg-CaD"/>
+                        <outlet property="searchBar" destination="n6W-4T-wGt" id="7v7-zV-DH5"/>
+                        <outlet property="tableView" destination="9c8-u1-hZQ" id="5dW-x1-Frq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRR-FP-M2g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.399999999999999" y="97.536945812807886"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
