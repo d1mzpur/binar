@@ -66,8 +66,7 @@ extension DashboardViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let row: Int = indexPath.row // selected row
-        let selectedChallenge = displayedChallenge[row] // get Student from sorted at number of row
-        switch selectedChallenge {
+        switch displayedChallenge[row] {
         
         case .AnimalListV1Mentor:
             let storyboard = UIStoryboard(name: "ALFMain", bundle: nil)
